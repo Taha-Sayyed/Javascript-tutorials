@@ -2,6 +2,8 @@
 
 function myFunc(theObject) {
   theObject.make = "Toyota";
+  console.log(theObject===myCar);//true since pointing to same memory
+  
 }
 
 const myCar = {
