@@ -1,9 +1,18 @@
 //Example-1
 
 const myNums=[1,2,3,4,5,6,7,8,9,10];
+const arr=[]
+const filteredNums=myNums.filter((num)=>{
+    if(num>5){
+        arr.push(num)
+        return true;
+    }
+    return false;
+});
+//console.log(arr);
 
-const filteredNums=myNums.filter((num)=>{return num>5 });
 console.log(filteredNums);
+
 
 
 //Example-2
@@ -24,6 +33,32 @@ let historyBook=books.filter((book)=>{
     return book.genre==="History"
 });
 console.log(historyBook);
+
+// Example-3 to illustrate that filter() method of Array instance creates a shallow copy of portion of a given array
+
+const objArr=[
+    {x:1},
+    {x:2},
+    {x:3}
+]
+
+const filteredArr=objArr.filter((obj)=>{
+    if(obj.x>1){
+        return true;
+    }
+    return false;
+})
+
+
+console.log(filteredArr);
+filteredArr[0].x="Taha"//changed the original array ie objArr
+console.log(filteredArr);
+console.log(objArr);
+
+
+
+
+
 
 
 
