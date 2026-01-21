@@ -8,10 +8,25 @@ const addNum=arr1.map((num)=>{
 console.log(addNum);
 addNum[0]=100
 console.log(addNum);
-console.log(arr1);
+console.log(arr1);//[ 1, 2, 3, 4, 5 ]   No change
+
+/*
+    1) If the elements of the array are non primitive then reference are shared
+    2) IF the element of the array are primitive then value are copied
+*/
+
+//Example-2
+
+const arr4=[{x:1},{x:2},{x:3}]
+const newArr4=arr4.filter((num)=>{
+    return num;
+});
+newArr4[0].x=100
+console.log(newArr4);
+console.log(arr4);
 
 
-//Example-2: Illustration of Chaining
+//Example-3: Illustration of Chaining
 
 const arr2=[1,2,3,4,5,6,7,8,9,10]
 
@@ -30,3 +45,5 @@ const newArr3=arr3
                 .map((num)=>num+1)
 
 console.log(newArr3);//[ 61, 71, 81, 91, 101 ]
+console.log(arr3);
+
