@@ -1,3 +1,5 @@
+//Example-1
+
 const promiseOne=new Promise(function(resolve,reject){
     setTimeout(()=>{
         let error=true;
@@ -23,4 +25,32 @@ promiseOne.then((obj)=>{
     
 })
 
+//Example-2
 
+const promiseTwo=new Promise(function(resolve,reject){
+    setTimeout(()=>{
+        resolve({
+            username:"Taha",
+            age:22,
+            Education:"BTech in AIML"
+        })
+    },2000)
+})
+
+//consumer function using aysnc await
+async function consumepromiseTwo(){
+    try{
+        const response=await promiseTwo
+        console.log(response.username);
+        console.log(response.Education);
+        console.log(response.age);
+        
+        
+    }
+    catch(err){
+        console.log(err);
+        
+    }
+}
+
+consumepromiseTwo();
