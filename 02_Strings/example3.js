@@ -69,12 +69,31 @@ const arr=str13.split(" ");
 console.log(arr);
 console.log(typeof arr);
 
+//String inculdes()
+//values performs a case-sensitive search to determine whether a given string may be found within this string, returning true or false as appropriate.
+
+const str14="Java is good then JS"
+console.log(str14.includes("C++")); //false
+
+//Accessing element from the index
+const str15="Taha";
+console.log(str15[2]); //h
+
+//String startsWith()
+//It determines whether this string begins with the characters of a specified string, returning true or false as appropriate.
+const str16="Taha Sayyed";
+console.log(str16.startsWith("T"))//true
+console.log(str16.startsWith("S",5))//true
+console.log(str16.startsWith("s",5))//false
 
 
+//String join()
+//It creates and returns a new string by concatenating all of the elements in this array, separated by commas or a specified separator string
 
-
-
-
+const str17 = ["Fire", "Air", "Water"];
+console.log(str17.join());//Fire,Air,Water
+console.log(str17.join(""));//FireAirWater
+console.log(str17.join("-"));//Fire-Air-Water
 
 
 
