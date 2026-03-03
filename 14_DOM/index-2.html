@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All DOM selector NodeList and HTMLCollection</title>
+    <style>
+        .bg-black{
+            background-color: #212121;
+            color: #fff;
+        }
+    </style>
+</head>
+<body class="bg-black">
+    <div>
+        <h1 id="title" class="heading">DOM Learning on Chai aur code</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum iure cupiditate distinctio perspiciatis rerum aspernatur laborum nam, dicta ratione veniam laboriosam excepturi iste sapiente? Praesentium aut architecto ullam dolore non?</p>
+
+        <h2>Lorem ipsum dolor sit.</h2>
+        <h2>Lorem ipsum dolor sit.</h2>
+        <h2>Lorem ipsum dolor sit.</h2>
+
+        <input type="password" id="password">
+    </div>
+</body>
+<script>
+    
+    // document.getElementById('title')
+    // document.getElementById('title').id
+    // document.getElementById('title').className
+    // document.getElementById('title').getAttribute('id')
+    // document.getElementById('title').getAttribute('class')
+    // document.getElementById('title').setAttribute('class','test')
+    // document.getElementById('title').setAttribute('class','test heading')
+
+    //document.querySelector('h1')// Quering by tag
+    //document.querySelector('#title')// Quering by Id
+    //document.querySelector('.heading')// Quering by Class
+
+    //document.querySelector('input[type="password"]')
+    //document.querySelector('input[id="password"]')
+    
+    //----------------------------------------------------
+
+    const title = document.getElementById('title')
+    title.style.backgroundColor="green"
+    title.style.padding="15px"
+    title.style.borderRadius="25px"
+
+    // title.innerHTML //print the text Content. If it contain inner HTML then it would also print it
+
+    // title.textContent //print the text content
+
+    // title.innerText //This gives what is displayed on screen. If the textContent is hide by CSS then this would not show
+
+    
+    
+    
+</script>
+</html>
