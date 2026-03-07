@@ -23,7 +23,7 @@ class User{
 
 }
 
-const user1=new User("Taha","taha@meta","213");
+const user1=new User("Taha","taha@meta","213");//User { _username: 'Taha', email: 'taha@meta', _password: '213' }
 console.log(user1.username);//Calls the getter function
 console.log(user1.passsword);//Calls the getter function
 
